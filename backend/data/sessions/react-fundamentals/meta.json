@@ -1,0 +1,33 @@
+{
+  "name": "Frontend React JS Component Fundamental",
+  "slug": "react-fundamentals",
+  "description": "Learn the fundamentals of React components",
+  "totalSteps": 5,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Introduction to React",
+      "file": "01-intro.md"
+    },
+    {
+      "number": 2,
+      "title": "Components and JSX",
+      "file": "02-components.md"
+    },
+    {
+      "number": 3,
+      "title": "Props: Passing Data",
+      "file": "03-props.md"
+    },
+    {
+      "number": 4,
+      "title": "State and Hooks",
+      "file": "04-state.md"
+    },
+    {
+      "number": 5,
+      "title": "Summary & Next Steps",
+      "file": "05-summary.md"
+    }
+  ]
+}
