@@ -17,7 +17,8 @@ export default function SessionPage() {
 
   const getSessionData = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/sessions/react-fundamentals');
+      const response = await axios.get('http://localhost:8080/api/sessions/' + sessionName);
+      console.log(sessionName);
 
       setSessionData(response.data);
     } catch (e) {
@@ -70,7 +71,7 @@ export default function SessionPage() {
 
         <main className="flex-1 overflow-auto flex flex-col">
           <div className="flex-1 p-8 overflow-auto">
-            <MarkdownViewer steps={currentStepIndex + 1} />
+            <MarkdownViewer steps={currentStepIndex + 1} sessionName={sessionName} />
           </div>
 
           <div className="bg-slate-800 border-t border-slate-700 p-6 flex justify-between items-center">

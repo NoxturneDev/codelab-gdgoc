@@ -1,0 +1,43 @@
+{
+  "name": "Python Lists & Tuples Fundamentals",
+  "slug": "python-array",
+  "description": "Master Python's core sequence data structures: Mutable Lists (Arrays) and Immutable Tuples.",
+  "totalSteps": 7,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Introduction to Lists (Arrays)",
+      "file": "01-list-intro.md"
+    },
+    {
+      "number": 2,
+      "title": "List Methods & Operations",
+      "file": "02-list-methods.md"
+    },
+    {
+      "number": 3,
+      "title": "Exercise: List Manipulation",
+      "file": "03-list-exercise.md"
+    },
+    {
+      "number": 4,
+      "title": "Introduction to Tuples",
+      "file": "04-tuple-intro.md"
+    },
+    {
+      "number": 5,
+      "title": "Tuple Methods & Unpacking",
+      "file": "05-tuple-methods.md"
+    },
+    {
+      "number": 6,
+      "title": "Exercise: Working with Tuples",
+      "file": "06-tuple-exercise.md"
+    },
+    {
+      "number": 7,
+      "title": "Summary: Mutability vs Immutability",
+      "file": "07-summary.md"
+    }
+  ]
+}

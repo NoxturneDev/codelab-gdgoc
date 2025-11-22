@@ -101,6 +101,8 @@ func getStepContentHandler(w http.ResponseWriter, r *http.Request) {
 	sessionName := vars["sessionName"]
 	stepNumberStr := vars["stepNumber"]
 
+	log.Println("TEST");
+	log.Println(sessionName);
 	stepNumber, err := strconv.Atoi(stepNumberStr)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
