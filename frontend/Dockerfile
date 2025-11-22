@@ -17,17 +17,17 @@ EXPOSE 5173
 # Default command (can be overridden in docker-compose)
 CMD ["bun", "run", "dev", "--host"]
 
-# Production build stage
-FROM oven/bun:1-alpine AS builder
+# Production build stage - Use Node.js for better Vite compatibility
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-COPY package.json bun.lockb* ./
-RUN bun install --frozen-lockfile
+COPY package.json package-lock.json* ./
+RUN npm ci
 
 COPY . .
 
-RUN bun run build
+RUN npm run build
 
 # Production serve stage
 FROM nginx:alpine AS production
