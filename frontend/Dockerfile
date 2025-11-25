@@ -18,12 +18,18 @@ EXPOSE 5173
 CMD ["bun", "run", "dev", "--host"]
 
 # Production build stage - Use Node.js for better Vite compatibility
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
-COPY package.json package-lock.json* ./
-RUN npm ci
+COPY package.json package-lock.json* bun.lockb* ./
+
+# Install dependencies - handle both npm and bun lockfiles
+RUN if [ -f package-lock.json ]; then \
+  npm ci; \
+  else \
+  npm install; \
+  fi
 
 COPY . .
 

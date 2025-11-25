@@ -17,7 +17,7 @@ export default function SessionPage() {
 
   const getSessionData = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/sessions/' + sessionName);
+      const response = await axios.get('https://codelab.noxturne.my.id/api/sessions/' + sessionName);
       console.log(sessionName);
 
       setSessionData(response.data);

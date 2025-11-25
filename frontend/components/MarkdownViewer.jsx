@@ -8,7 +8,7 @@ export default function MarkdownViewer({ steps, sessionName }) {
 
   const getSessionContent = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/sessions/' + sessionName + '/steps/' + steps);
+      const response = await axios.get('https://codelab.noxturne.my.id/api/sessions/' + sessionName + '/steps/' + steps);
 
       setContent(response.data.content);
       console.log(response.data.content);
