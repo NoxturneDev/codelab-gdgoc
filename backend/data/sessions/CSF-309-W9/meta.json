@@ -1,0 +1,28 @@
+{
+  "name": "Logical Database Design",
+  "slug": "CSF-309-W9",
+  "description": "Learn to translate conceptual Entity Relationship Diagrams (ERDs) into robust Relational Schemas.",
+  "totalSteps": 4,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Conceptual Design: ERD Basics",
+      "file": "01-erd-concepts.md"
+    },
+    {
+      "number": 2,
+      "title": "The Logical Transformation: 1:N Mapping",
+      "file": "02-mapping-basics.md"
+    },
+    {
+      "number": 3,
+      "title": "Complex Relationships (M:N) & Bridge Tables",
+      "file": "03-complex-relationships.md"
+    },
+    {
+      "number": 4,
+      "title": "Exercise: Bookstore Logical Design",
+      "file": "04-design-workshop.md"
+    }
+  ]
+}
