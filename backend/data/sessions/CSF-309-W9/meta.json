@@ -7,22 +7,22 @@
     {
       "number": 1,
       "title": "Conceptual Design: ERD Basics",
-      "file": "01-erd-concepts.md"
+      "file": "01-conceptual-data-erd.md"
     },
     {
       "number": 2,
       "title": "The Logical Transformation: 1:N Mapping",
-      "file": "02-mapping-basics.md"
+      "file": "02-logical-design.md"
     },
     {
       "number": 3,
       "title": "Complex Relationships (M:N) & Bridge Tables",
-      "file": "03-complex-relationships.md"
+      "file": "03-physical-design.md"
     },
     {
       "number": 4,
       "title": "Exercise: Bookstore Logical Design",
-      "file": "04-design-workshop.md"
+      "file": "04-exercise.md"
     }
   ]
 }
