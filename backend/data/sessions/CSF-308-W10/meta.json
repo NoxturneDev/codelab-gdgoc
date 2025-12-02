@@ -1,0 +1,23 @@
+{
+  "name": "Logical Database Design",
+  "slug": "logical-db-design",
+  "description": "Learn to translate conceptual Entity Relationship Diagrams (ERDs) into robust Relational Schemas.",
+  "totalSteps": 4,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Polymorphism Introduction",
+      "file": "01-polymorphism-introduction.md"
+    },
+    {
+      "number": 2,
+      "title": "2. Polymorphism & Inheritance",
+      "file": "02-polymorphism-inheritance.md"
+    },
+    {
+      "number": 3,
+      "title": "Exercise",
+      "file": "03-exercise.md"
+    }
+  ]
+}
