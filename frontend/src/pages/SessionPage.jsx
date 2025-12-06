@@ -28,6 +28,7 @@ export default function SessionPage() {
 
   useEffect(() => {
     getSessionData();
+    document.title = sessionName;
   }, [])
 
   if (!sessionData) {
