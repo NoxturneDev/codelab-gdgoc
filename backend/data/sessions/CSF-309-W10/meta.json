@@ -1,0 +1,28 @@
+{
+  "name": "SQL Query Operations",
+  "slug": "CSF-309-W10",
+  "description": "Learn to operate SQL queries from an already designed database (conceptual, logical, and physical schemas).",
+  "totalSteps": 4,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Introduction to SQL Query Operations",
+      "file": "01-sql-query-introduction.md"
+    },
+    {
+      "number": 2,
+      "title": "2. Basic Data Retrieval with SELECT",
+      "file": "02-select-basics.md"
+    },
+    {
+      "number": 3,
+      "title": "3. Filtering, Sorting, and Aggregation",
+      "file": "03-filter-sort-aggregate.md"
+    },
+    {
+      "number": 4,
+      "title": "Exercise",
+      "file": "04-exercise.md"
+    }
+  ]
+}
