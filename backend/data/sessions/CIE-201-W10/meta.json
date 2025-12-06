@@ -1,0 +1,28 @@
+{
+  "name": "Python Input & Output",
+  "slug": "python-input-output",
+  "description": "Learn how to receive input from users and display output in Python using print(), input(), type conversion, and formatted strings.",
+  "totalSteps": 4,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Understanding print()",
+      "file": "01-understanding-print.md"
+    },
+    {
+      "number": 2,
+      "title": "2. Getting User Input with input()",
+      "file": "02-input-function.md"
+    },
+    {
+      "number": 3,
+      "title": "3. Type Conversion & f-Strings",
+      "file": "03-type-conversion-fstrings.md"
+    },
+    {
+      "number": 4,
+      "title": "Exercise",
+      "file": "04-exercise.md"
+    }
+  ]
+}
