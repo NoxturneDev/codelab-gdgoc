@@ -1,0 +1,23 @@
+{
+  "name": "Queue Algorithm",
+  "slug": "algo-queue",
+  "description": "Learn about Queue Algorithm",
+  "totalSteps": 3,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Queue introduction",
+      "file": "01-queue-introduction.md"
+    },
+    {
+      "number": 2,
+      "title": "Queue Source Code",
+      "file": "02-queue-source-code.md"
+    },
+    {
+      "number": 3,
+      "title": "Queue implementation",
+      "file": "03-queue-implementation.md"
+    }
+  ]
+}
