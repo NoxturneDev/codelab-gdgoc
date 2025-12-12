@@ -1,0 +1,58 @@
+{
+  "name": "Gemini AI Study Jam",
+  "slug": "gemini-ai-study-jam",
+  "description": "Build a personalized AI Chatbot using React, Vite, and Google Gemini API.",
+  "totalSteps": 10,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Project Preview & Architecture",
+      "file": "01-preview.md"
+    },
+    {
+      "number": 2,
+      "title": "2. Prerequisites (Node.js & Git)",
+      "file": "02-pre-requisite.md"
+    },
+    {
+      "number": 3,
+      "title": "3. Project Initialization",
+      "file": "03-setup-project.md"
+    },
+    {
+      "number": 4,
+      "title": "4. Getting Gemini API Key",
+      "file": "04-google-ai-studio.md"
+    },
+    {
+      "number": 5,
+      "title": "5. Environment Configuration",
+      "file": "05-environtment-variables.md"
+    },
+    {
+      "number": 6,
+      "title": "6. App Logic: State & API Integration",
+      "file": "06-app.jsx.md"
+    },
+    {
+      "number": 7,
+      "title": "7. App Logic: Rendering & Customization",
+      "file": "07-app.jsx-2.md"
+    },
+    {
+      "number": 8,
+      "title": "8. Modify Your AI Persona",
+      "file": "08-modify-your-ai.md"
+    },
+    {
+      "number": 9,
+      "title": "9. Advanced Prompt Engineering",
+      "file": "09-prompt-engineering(advanced).md"
+    },
+    {
+      "number": 10,
+      "title": "10. Final Challenge",
+      "file": "10-challenge.md"
+    }
+  ]
+}
