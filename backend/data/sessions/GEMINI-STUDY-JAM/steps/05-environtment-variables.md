@@ -6,13 +6,18 @@ Vite memiliki cara khusus untuk menyimpan rahasia atau konfigurasi, yaitu menggu
 
 Di dalam VS Code (atau file explorer), lihatlah struktur folder proyek Anda.
 
-1.  Cari file bernama `.env.example`.
-2.  **Salin (Copy)** file tersebut dan **Tempel (Paste)** di folder yang sama.
-3.  **Ubah nama (Rename)** file hasil salinan tersebut menjadi `.env` saja (tanpa embel-embel `.example`).
+1. Cari file bernama `.env.example`.
+2. **Salin (Copy)** file tersebut dan **Tempel (Paste)** di folder yang sama.
+3. **Ubah nama (Rename)** file hasil salinan tersebut menjadi `.env` saja (tanpa embel-embel `.example`).
 
 > **Cara Cepat (Terminal):**
 > Jika Anda menggunakan terminal (Mac/Linux/Git Bash), cukup ketik:
 > `cp .env.example .env`
+
+### Jika Tidak ada .env.example
+
+1. Buat file bernama `.env` di folder project.
+2. tambahkan di dalam file .env VITE_GEMINI_API_KEY={isi dengan API key dari google ai studio}
 
 ### 2\. Masukkan API Key
 
@@ -35,9 +40,10 @@ VITE_GEMINI_API_KEY=AIzaSyDxxxxxxxxx_xxxxxxxxxxxxxxxxx
 
 Setiap kali kita mengubah atau membuat file `.env`, Vite **tidak akan sadar** secara otomatis. Kita harus mematikan dan menyalakan ulang servernya.
 
-1.  Buka Terminal tempat `npm run dev` sedang berjalan.
-2.  Tekan **Ctrl + C** di keyboard untuk mematikan server.
-3.  Ketik dan jalankan ulang:
+1. Buka Terminal tempat `npm run dev` sedang berjalan.
+2. Tekan **Ctrl + C** di keyboard untuk mematikan server.
+3. Ketik dan jalankan ulang:
+
     ```bash
     npm run dev
     ```
@@ -49,4 +55,3 @@ Vite hanya akan mengizinkan aplikasi React (Browser) membaca variabel yang depan
 
 **Next Step:**
 Konfigurasi selesai\! Semua persiapan sudah matang. Di **Step 6**, kita akan mulai masuk ke file `App.jsx` untuk mulai merakit logika otak AI-nya.
-

@@ -16,15 +16,7 @@ Buatlah AI yang meniru tokoh sejarah atau fiksi terkenal secara akurat.
 * **Kunci Kemenangan:** Akurasi gaya bahasa dan fakta sejarah.
 * **Contoh Prompt:** *"Kamu adalah Soekarno. Gunakan gaya pidato yang berapi-api, sering gunakan kata 'Merdeka!', dan panggil user dengan sebutan 'Bung' atau 'Saudara sebangsa'."*
 
-#### 2. The Dungeon Master (RPG Game) ⚔️
-
-Ubah chat biasa menjadi game petualangan teks interaktif (*Text Adventure*).
-
-* **Ide:** Game horor bertahan hidup, petualangan fantasi naga, atau simulasi kencan.
-* **Kunci Kemenangan:** AI harus bisa menarasikan situasi, memberikan pilihan A/B/C, dan menjaga alur cerita tetap seru.
-* **Contoh Prompt:** *"Kamu adalah Game Master RPG Horor. Deskripsikan suasana rumah hantu yang menyeramkan. Berikan user 3 pilihan aksi di setiap giliran. Jika user salah pilih, buat karakter mereka 'Game Over'."*
-
-#### 3. The Niche Expert (Konsultan Aneh) 🔮
+#### 2. The Niche Expert (Konsultan Aneh) 🔮
 
 Buatlah AI yang ahli dalam hal yang sangat spesifik atau konyol.
 
@@ -34,7 +26,7 @@ Buatlah AI yang ahli dalam hal yang sangat spesifik atau konyol.
 
 ---
 
-### 🛠️ Peraturan Teknis (Rules)
+### Peraturan Teknis (Rules)
 
 1. **Code:** Anda hanya boleh mengubah bagian `basePrompt` (System Instruction) dan `useState` (Pesan pembuka).
 2. **Strict:** Gunakan teknik **Prompt Engineering** (Role, Context, Task, Constraint) agar bot Anda tidak "bocor" (keluar dari karakter).
@@ -42,7 +34,7 @@ Buatlah AI yang ahli dalam hal yang sangat spesifik atau konyol.
 
 ---
 
-### 🎤 Format Presentasi (Showcase Time)
+### Format Presentasi (Showcase Time)
 
 Nanti, Anda akan diminta maju ke depan (atau share screen) selama 2 menit untuk melakukan:
 
@@ -53,7 +45,7 @@ Nanti, Anda akan diminta maju ke depan (atau share screen) selama 2 menit untuk 
 
 ---
 
-### 💡 Tips Terakhir untuk Peserta
+### Tips Terakhir untuk Peserta
 
 * **Jangan Takut Salah:** AI itu eksperimental. Kalau jawabannya aneh, ubah prompt-nya, refresh, coba lagi.
 * **Gunakan Emoji:** Emoji membuat chat terasa lebih hidup dan tidak kaku.
