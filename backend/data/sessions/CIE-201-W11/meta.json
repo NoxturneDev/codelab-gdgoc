@@ -22,12 +22,17 @@
     {
       "number": 4,
       "title": "Else",
-      "file": "03-else.md"
+      "file": "04-else.md"
     },
     {
       "number": 5,
       "title": "Finally",
-      "file": "03-finally.md"
+      "file": "05-finally.md"
+    },
+    {
+      "number": 6,
+      "title": "Exercise",
+      "file": "06-exercise.md"
     }
   ]
 }
