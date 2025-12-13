@@ -7,11 +7,11 @@ Anak-anak sering iseng: kadang mereka memasukkan huruf, kadang mereka membagi de
 **Tugas Anda:**
 Lengkapi kode di bawah ini agar memenuhi aturan berikut:
 
-1.  **TRY:** Minta user memasukkan `angka_1` dan `angka_2`.
-2.  **EXCEPT (ValueError):** Jika user memasukkan huruf, cetak: *"Mohon masukkan angka saja\!"*
-3.  **EXCEPT (ZeroDivisionError):** Jika user membagi dengan 0, cetak: *"Tidak bisa membagi dengan nol\!"*
-4.  **ELSE:** Jika berhasil, hitung pembagiannya dan cetak: *"Hasil pembagian: [hasil]"*
-5.  **FINALLY:** Apa pun yang terjadi, cetak: *"Terima kasih sudah menggunakan kalkulator ini."*
+1. **TRY:** Minta user memasukkan `angka_1` dan `angka_2`.
+2. **EXCEPT (ValueError):** Jika user memasukkan huruf, cetak: *"Mohon masukkan angka saja\!"*
+3. **EXCEPT (ZeroDivisionError):** Jika user membagi dengan 0, cetak: *"Tidak bisa membagi dengan nol\!"*
+4. **ELSE:** Jika berhasil, hitung pembagiannya dan cetak: *"Hasil pembagian: [hasil]"*
+5. **FINALLY:** Apa pun yang terjadi, cetak: *"Terima kasih sudah menggunakan kalkulator ini."*
 
 ### 💻 Kerangka Kode (Salin & Lengkapi)
 
@@ -71,4 +71,3 @@ Output:
 Tidak bisa membagi dengan nol!
 Terima kasih sudah menggunakan kalkulator ini.
 ```
-
