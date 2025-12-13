@@ -1,0 +1,33 @@
+{
+  "name": "Exception Handling in Python",
+  "slug": "exception-handling",
+  "description": "Belajar Mengenai exception-handling",
+  "totalSteps": 3,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Exception Handling Introduction",
+      "file": "01-exception-handling-introduction.md"
+    },
+    {
+      "number": 2,
+      "title": "Try Block",
+      "file": "02-try.md"
+    },
+    {
+      "number": 3,
+      "title": "Except Block",
+      "file": "03-except.md"
+    },
+    {
+      "number": 4,
+      "title": "Else",
+      "file": "03-else.md"
+    },
+    {
+      "number": 5,
+      "title": "Finally",
+      "file": "03-finally.md"
+    }
+  ]
+}
