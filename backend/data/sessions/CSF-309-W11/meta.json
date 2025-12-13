@@ -1,0 +1,38 @@
+{
+  "name": "Advanced SQL: Transactions & Performance",
+  "slug": "advanced-sql-performance",
+  "description": "Master data integrity with ACID Transactions and optimize database speed using Indexing.",
+  "totalSteps": 6,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Review & Real-World Problems",
+      "file": "01-real-world-problems.md"
+    },
+    {
+      "number": 2,
+      "title": "2. Understanding Transactions & ACID",
+      "file": "02-transactions-acid.md"
+    },
+    {
+      "number": 3,
+      "title": "3. SQL Transaction Demo (Commit & Rollback)",
+      "file": "03-transaction-demo.md"
+    },
+    {
+      "number": 4,
+      "title": "4. Indexing & Query Performance",
+      "file": "04-indexing-performance.md"
+    },
+    {
+      "number": 5,
+      "title": "5. Case Study Discussion",
+      "file": "05-case-study.md"
+    },
+    {
+      "number": 6,
+      "title": "6. Wrap-up & Key Takeaways",
+      "file": "06-wrap-up.md"
+    }
+  ]
+}
