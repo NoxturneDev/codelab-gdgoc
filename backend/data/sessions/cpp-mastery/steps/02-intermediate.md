@@ -1,6 +1,29 @@
 # Step 2: Intermediate Logic & Data Structures
 
-### Topik 1: Arrays (Larik)Fokus: Menyimpan banyak data dalam satu variabel dan mengaksesnya menggunakan index
+### Arrays
+
+```cpp
+// aray strings
+string arr[2] = {"galih", "adhi"} 
+
+// array integer (array angka)
+int arr[2] = {1, 2}
+int genap[2] = {2, 4}
+int ganjil[2] = {1, 3}
+
+```
+
+#### Cara tambah nilai ke array
+
+```cpp
+int arr[5];
+arr[0] = 1;
+arr[1] = 10;
+arr[2] = 3;
+...
+```
+
+### Topik 1: Arrays : Menyimpan banyak data dalam satu variabel dan mengaksesnya menggunakan index
 
 **Soal 1.1 (Level: Menengah-Mudah)**
 Buatlah program "Pencari Nilai Maksimum & Minimum".

@@ -28,7 +28,7 @@ Buatlah program "Konversi Suhu".
 Buatlah program "Ganjil Genap".
 
 * Program meminta input satu angka bulat (`int`).
-* Jika angka habis dibagi 2, tampilkan "Angka Genap".
+* Jika angka habis dibagi 2, tampilkan "Angka Genap". (if x % 2 == 0)
 * Jika tidak, tampilkan "Angka Ganjil".
 
 **Soal 2.2 (Level: Menengah)**
