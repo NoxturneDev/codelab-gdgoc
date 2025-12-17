@@ -1,0 +1,23 @@
+{
+  "name": "Gemini AI Study Jam",
+  "slug": "gemini-ai-study-jam",
+  "description": "Build a personalized AI Chatbot using React, Vite, and Google Gemini API.",
+  "totalSteps": 10,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Basic syntax",
+      "file": "01-basic.md"
+    },
+    {
+      "number": 2,
+      "title": "Intermediate syntax",
+      "file": "02-intermediate.md"
+    },
+    {
+      "number": 3,
+      "title": "Challenge",
+      "file": "03-challenge.md"
+    }
+  ]
+}
