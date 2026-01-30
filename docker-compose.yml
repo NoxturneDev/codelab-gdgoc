@@ -5,6 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+      target: development
     ports:
       - "8080:8080"
     volumes:
@@ -13,7 +14,6 @@ services:
     environment:
       - PORT=8080
       - ENV=development
-    command: air # hot reload using air
     networks:
       - codelab-network
 
@@ -21,8 +21,9 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      target: development
     ports:
-      - "5173:5173"
+      - "5179:5173"
     volumes:
       - ./frontend:/app
       - /app/node_modules
