@@ -1,26 +1,35 @@
 "use client"
 
-import { useState, useMemo, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react"
 import Sidebar from "@/components/Sidebar"
 import TopBar from "@/components/Topbar"
 import MarkdownViewer from "@/components/MarkdownViewer"
-import axios from "axios";
+import { useSessionHistory } from "@/hooks/useSessionHistory"
+import { API_ENDPOINTS } from "@/config/api"
+import axios from "axios"
 
 export default function SessionPage() {
   const { sessionName } = useParams()
   const navigate = useNavigate()
   const [currentStepIndex, setCurrentStepIndex] = useState(0)
-  const [sessionData, setSessionData] = useState(null);
+  const [sessionData, setSessionData] = useState(null)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const { addToHistory } = useSessionHistory()
 
   const getSessionData = async () => {
     try {
-      const response = await axios.get('https://codelab.noxturne.my.id/api/sessions/' + sessionName);
-      console.log(sessionName);
+      const response = await axios.get(API_ENDPOINTS.sessions(sessionName))
+      console.log(sessionName)
 
-      setSessionData(response.data);
+      setSessionData(response.data)
+
+      // Save to history with the actual session title
+      if (response.data?.title) {
+        addToHistory(sessionName, response.data.title)
+      }
     } catch (e) {
       console.log(e)
     }
@@ -33,13 +42,13 @@ export default function SessionPage() {
 
   if (!sessionData) {
     return (
-      <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-background-light dark:bg-background-dark flex items-center justify-center p-4">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-white mb-4">Session not found</h1>
+          <h1 className="text-2xl font-bold text-text-light dark:text-text-dark mb-4">Session not found</h1>
           <Button
             onClick={() => navigate("/")}
             variant="outline"
-            className="border-slate-600 text-slate-200 hover:bg-slate-800"
+            className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
@@ -64,39 +73,52 @@ export default function SessionPage() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-slate-900">
-      <TopBar sessionTitle={sessionData.title} onBack={() => navigate("/")} />
+    <div className="h-screen flex flex-col bg-background-light dark:bg-background-dark">
+      <TopBar
+        sessionTitle={sessionData.title}
+        onBack={() => navigate("/")}
+        onToggleSidebar={setIsSidebarOpen}
+        isSidebarOpen={isSidebarOpen}
+      />
 
       <div className="flex flex-1 overflow-hidden">
-        <Sidebar steps={sessionData.steps} currentStepIndex={currentStepIndex} onSelectStep={setCurrentStepIndex} />
+        <Sidebar
+          steps={sessionData.steps}
+          currentStepIndex={currentStepIndex}
+          onSelectStep={setCurrentStepIndex}
+          isOpen={isSidebarOpen}
+          onToggle={setIsSidebarOpen}
+        />
 
         <main className="flex-1 overflow-auto flex flex-col">
-          <div className="flex-1 p-8 overflow-auto">
+          <div className="flex-1 p-4 md:p-8 overflow-auto bg-white dark:bg-background-dark">
             <MarkdownViewer steps={currentStepIndex + 1} sessionName={sessionName} />
           </div>
 
-          <div className="bg-slate-800 border-t border-slate-700 p-6 flex justify-between items-center">
+          <div className="bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700 p-4 md:p-6 flex justify-between items-center gap-2">
             <Button
               onClick={handlePrevious}
               disabled={currentStepIndex === 0}
               variant="outline"
-              className="border-slate-600 text-slate-200 hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed bg-transparent"
+              size="sm"
+              className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed bg-transparent"
             >
-              <ChevronLeft className="w-4 h-4 mr-2" />
-              Previous
+              <ChevronLeft className="w-4 h-4 md:mr-2" />
+              <span className="hidden md:inline">Previous</span>
             </Button>
 
-            <div className="text-sm text-slate-400">
-              Step {currentStepIndex + 1} of {sessionData.steps.length}
+            <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+              {currentStepIndex + 1}/{sessionData.steps.length}
             </div>
 
             <Button
               onClick={handleNext}
               disabled={currentStepIndex === sessionData.steps.length - 1}
-              className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              size="sm"
+              className="bg-google-blue hover:opacity-90 transition-opacity text-white disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Next
-              <ChevronRight className="w-4 h-4 ml-2" />
+              <span className="hidden md:inline">Next</span>
+              <ChevronRight className="w-4 h-4 md:ml-2" />
             </Button>
           </div>
         </main>

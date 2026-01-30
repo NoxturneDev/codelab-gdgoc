@@ -1,28 +1,29 @@
 import ReactMarkdown from "react-markdown"
 import { Code, Pre } from "@/components/MarkdownComponents"
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState, useEffect } from "react"
+import { API_ENDPOINTS } from "@/config/api"
+import axios from "axios"
 
 export default function MarkdownViewer({ steps, sessionName }) {
-  const [content, setContent] = useState(null);
+  const [content, setContent] = useState(null)
 
   const getSessionContent = async () => {
     try {
-      const response = await axios.get('https://codelab.noxturne.my.id/api/sessions/' + sessionName + '/steps/' + steps);
+      const response = await axios.get(API_ENDPOINTS.sessionSteps(sessionName, steps))
 
-      setContent(response.data.content);
-      console.log(response.data.content);
+      setContent(response.data.content)
+      console.log(response.data.content)
     } catch (e) {
       console.log(e)
     }
   }
 
   useEffect(() => {
-    getSessionContent();
+    getSessionContent()
   }, [steps])
 
   return (
-    <article className="markdown text-white">
+    <article className="markdown">
       <ReactMarkdown
         components={{
           code: Code,
