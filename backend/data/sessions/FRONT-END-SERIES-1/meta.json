@@ -1,0 +1,33 @@
+{
+  "name": "Front-End Series #1: Introduction to ReactJS",
+  "slug": "front-end-series-1",
+  "description": "Build a chatbot application using React and Tailwind CSS. Learn the fundamentals of React components, state management, and modern styling.",
+  "totalSteps": 5,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Install React",
+      "file": "01-install-react.md"
+    },
+    {
+      "number": 2,
+      "title": "Konfigurasi Tailwind CSS",
+      "file": "02-install-tailwind.md"
+    },
+    {
+      "number": 3,
+      "title": "Membuat Komponen Reusable (BubbleChat)",
+      "file": "03-reusable-component.md"
+    },
+    {
+      "number": 4,
+      "title": "Logic & Main UI (App.jsx)",
+      "file": "04-main-logic.md"
+    },
+    {
+      "number": 5,
+      "title": "Final Check & Running",
+      "file": "05-run.md"
+    }
+  ]
+}

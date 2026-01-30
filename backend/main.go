@@ -101,8 +101,8 @@ func getStepContentHandler(w http.ResponseWriter, r *http.Request) {
 	sessionName := vars["sessionName"]
 	stepNumberStr := vars["stepNumber"]
 
-	log.Println("TEST");
-	log.Println(sessionName);
+	log.Println("TEST")
+	log.Println(sessionName)
 	stepNumber, err := strconv.Atoi(stepNumberStr)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -216,7 +216,7 @@ func main() {
 	addr := fmt.Sprintf(":%s", port)
 	log.Printf("Server starting on %s", addr)
 	log.Printf("Data directory: %s", filepath.Join("data", "sessions"))
-	
+
 	// Check if data directory exists
 	if _, err := os.Stat(filepath.Join("data", "sessions")); os.IsNotExist(err) {
 		log.Println("Warning: data/sessions directory does not exist")
