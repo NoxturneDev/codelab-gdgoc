@@ -1,16 +1,74 @@
-# React + Vite
+# CodeLabs Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive learning experiences inspired by Google Codelabs. Built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Dark/Light theme toggle with Google's color palette
+- 📱 Fully responsive design with mobile-friendly sidebar
+- 📚 Session history stored in localStorage
+- 🎯 Step-by-step navigation through learning materials
+- ✨ Markdown rendering with syntax highlighting
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js 16+
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+
+```bash
+cp .env.example .env.development
+```
+
+### Environment Variables
+
+The application uses different API endpoints for development and production:
+
+- **Development** (`.env.development`):
+  ```
+  VITE_API_URL=http://localhost:8080
+  ```
+
+- **Production** (`.env.production`):
+  ```
+  VITE_API_URL=https://codelab.noxturne.my.id
+  ```
+
+> **Note**: Vite requires environment variables to be prefixed with `VITE_` to be exposed to the client.
+
+### Running the Application
+
+**Development mode:**
+```bash
+npm run dev
+```
+
+**Production build:**
+```bash
+npm run build
+npm run preview
+```
+
+## Tech Stack
+
+- **React 19** - UI framework
+- **Vite** - Build tool and dev server
+- **Tailwind CSS 4** - Styling
+- **React Router** - Navigation
+- **Axios** - HTTP client
+- **React Markdown** - Markdown rendering
+- **next-themes** - Theme management
+- **Radix UI** - Accessible UI components
+- **Lucide React** - Icons
