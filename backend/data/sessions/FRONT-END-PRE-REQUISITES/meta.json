@@ -1,0 +1,13 @@
+{
+  "name": "Front end series pre requisite",
+  "slug": "front-end-pre-prequisites",
+  "description": "Build a personalized AI Chatbot using React, Vite, and Google Gemini API.",
+  "totalSteps": 1,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Pre requisite",
+      "file": "01-pre-requisite.md"
+    }
+  ]
+}
