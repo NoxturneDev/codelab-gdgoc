@@ -1,0 +1,33 @@
+{
+  "name": "Front-End Series #2: Gemini AI Integration",
+  "slug": "front-end-series-2",
+  "description": "Build an advanced AI chatbot with image upload capability using React, Vite, Tailwind CSS, and Google Gemini API. Learn state management, form handling, and API integration.",
+  "totalSteps": 5,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Setup Project React + Vite",
+      "file": "01-setup-project.md"
+    },
+    {
+      "number": 2,
+      "title": "Konfigurasi Tailwind CSS",
+      "file": "02-install-tailwind.md"
+    },
+    {
+      "number": 3,
+      "title": "Membuat Komponen BubbleChat",
+      "file": "03-bubblechat-component.md"
+    },
+    {
+      "number": 4,
+      "title": "Logic & Main UI (App.jsx)",
+      "file": "04-main-app-logic.md"
+    },
+    {
+      "number": 5,
+      "title": "Integrasi dengan Gemini AI API",
+      "file": "05-gemini-integration.md"
+    }
+  ]
+}
