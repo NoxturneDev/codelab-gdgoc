@@ -1,8 +1,10 @@
 import ReactMarkdown from "react-markdown"
+import rehypeHighlight from "rehype-highlight"
 import { Code, Pre } from "@/components/MarkdownComponents"
 import { useState, useEffect } from "react"
 import { API_ENDPOINTS } from "@/config/api"
 import axios from "axios"
+import "highlight.js/styles/github-dark.css"
 
 export default function MarkdownViewer({ steps, sessionName }) {
   const [content, setContent] = useState(null)
@@ -25,6 +27,7 @@ export default function MarkdownViewer({ steps, sessionName }) {
   return (
     <article className="markdown">
       <ReactMarkdown
+        rehypePlugins={[rehypeHighlight]}
         components={{
           code: Code,
           pre: Pre,
