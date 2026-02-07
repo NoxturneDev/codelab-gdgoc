@@ -11,7 +11,7 @@ Sebelum memulai, pastikan kamu sudah menginstall Node.js versi 20 atau yang lebi
 ### 1.1 Buka VS Code dan Buat Folder Project
 
 1. Buka VS Code
-2. Klik menu **File** > **Open Folder** (atau tekan **CTRL+K lalu CTRL+O**)
+2. Klik menu **File** > **Open Folder** (atau tekan **CTRL+M lalu CTRL+O**)
 3. Buat folder baru dengan nama **"frontend-series-2"**
 4. Pilih folder tersebut
 

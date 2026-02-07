@@ -2,7 +2,7 @@
   "name": "Front-End Series #2: Gemini AI Integration",
   "slug": "front-end-series-2",
   "description": "Build an advanced AI chatbot with image upload capability using React, Vite, Tailwind CSS, and Google Gemini API. Learn state management, form handling, and API integration.",
-  "totalSteps": 5,
+  "totalSteps": 6,
   "steps": [
     {
       "number": 1,
@@ -26,8 +26,13 @@
     },
     {
       "number": 5,
+      "title": "Fitur Attach Gambar",
+      "file": "05-attach-image.md"
+    },
+    {
+      "number": 6,
       "title": "Integrasi dengan Gemini AI API",
-      "file": "05-gemini-integration.md"
+      "file": "06-gemini-integration.md"
     }
   ]
 }
