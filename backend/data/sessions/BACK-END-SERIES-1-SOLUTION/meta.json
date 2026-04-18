@@ -1,0 +1,13 @@
+{
+  "name": "back-end-series-1-solution",
+  "slug": "back-end-series-1-solution",
+  "description": "back end series 1 solution",
+  "totalSteps": 1,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Challenge Solution",
+      "file": "solution.md"
+    }
+  ]
+}

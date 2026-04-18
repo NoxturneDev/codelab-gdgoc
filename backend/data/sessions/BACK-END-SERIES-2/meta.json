@@ -1,0 +1,38 @@
+{
+  "name": "back-end-series-1",
+  "slug": "back-end-series-1",
+  "description": "back end series 1",
+  "totalSteps": 6,
+  "steps": [
+    {
+      "number": 1,
+      "title": "1. Installasi Express JS",
+      "file": "step1.md"
+    },
+    {
+      "number": 2,
+      "title": "2. Membuat Gemini Controller",
+      "file": "step2.md"
+    },
+    {
+      "number": 3,
+      "title": "3. Setup Prisma & Database",
+      "file": "step3.md"
+    },
+    {
+      "number": 4,
+      "title": "4. Simpan Chat ke Database",
+      "file": "step4.md"
+    },
+    {
+      "number": 5,
+      "title": "5. Get Chat History",
+      "file": "step5.md"
+    },
+    {
+      "number": 6,
+      "title": "6. Get & Delete By ID",
+      "file": "step6.md"
+    }
+  ]
+}
