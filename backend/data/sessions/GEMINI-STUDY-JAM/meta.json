@@ -1,6 +1,6 @@
 {
   "name": "JavaScript to DOM: Framework Prep",
-  "slug": "javascript-dom-prep",
+  "slug": "javascript-fundamentals",
   "description": "Pelajari fondasi JavaScript, manipulasi DOM, dan pengelolaan state dasar sebagai jembatan sebelum mempelajari framework seperti React atau Vue.",
   "totalSteps": 7,
   "steps": [
